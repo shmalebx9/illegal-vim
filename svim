@@ -1,0 +1,13 @@
+#!/bin/bash
+exec="gvim" 
+if [ $# -eq 0 ]
+  then  # no filename given
+    if [ -z $($exec --serverlist) ]
+      then  # no filename given and no gvim instance
+        $exec -f --servername GVIM > /dev/null 2>&1
+      else  # no filename given, but a gvim instance exists
+	      echo "already running"
+    fi
+  else  # filenames given
+    $exec -f --servername GVIM --remote-tab "$@" > /dev/null 2>&1
+fi
