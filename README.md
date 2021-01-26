@@ -12,19 +12,19 @@
 + Clone the repo & enter directory
 + Copy gtk theme to match ayu theme.
 
-cp -r materia-ayu-m ~./local/share/themes/
+`cp -r materia-ayu-m ~./local/share/themes/`
 
 + Copy vimrc to .vimrc
 
-<kbd>cp .vimrc ~/.vimrc</kbd>
+`cp .vimrc ~/.vimrc`
 
-+ Copy svim to somewhere in your <kbd>PATH</kbd>
++ Copy svim to somewhere in your $ PATH
 
-<kbd>cp svim ~/.local/bin/ && chmod +x ~/.local/bin/svim</kbd>
+`cp svim ~/.local/bin/ && chmod +x ~/.local/bin/svim`
 
 + Launch svim and run PlugInstall
 
-<kbd>:PlugInstall</kbd>
+`:PlugInstall`
 
 ## Usage
 
