@@ -11,37 +11,48 @@
 
 + Clone the repo & enter directory
 + Copy gtk theme to match ayu theme.
-`cp -r materia-ayu-m ~./local/share/themes/`
+
+cp -r materia-ayu-m ~./local/share/themes/
+
 + Copy vimrc to .vimrc
-`cp .vimrc ~/.vimrc`
-+ Copy svim to somewhere in your `PATH`
-`cp svim ~/.local/bin/ && chmod +x ~/.local/bin/svim`
+
+<kbd>cp .vimrc ~/.vimrc</kbd>
+
++ Copy svim to somewhere in your <kbd>PATH</kbd>
+
+<kbd>cp svim ~/.local/bin/ && chmod +x ~/.local/bin/svim</kbd>
+
 + Launch svim and run PlugInstall
-`:PlugInstall`
+
+<kbd>:PlugInstall</kbd>
 
 ## Usage
 
-Initiate with `svim` script rather than gvim directly to save the session. This will also open new files in the same vim instance if files are provided as an argument.
+Initiate with <kbd>svim</kbd> script rather than gvim directly to save the session. This will also open new files in the same vim instance if files are provided as an argument.
 
 ### Tab Navigation
 
-`PageUp`	Go to next 
-`PageDown`	Go to last 
-`Ctrl+w`	Close current 
+<kbd>PageUp</kbd>	Go to next 
+<kbd>PageDown</kbd>	Go to last 
+<kbd>Ctrl+w</kbd>	Close current 
 
 ### "normal" keybinds
 
-`Ctrl+s`	Save the current buffer
-`Ctrl+c`	Copy selected text (to secondary)
-`Ctrl+v`	Paste selected text (from secondary)
+<kbd>Ctrl+s</kbd>	Save the current buffer
+<kbd>Ctrl+c</kbd>	Copy selected text (to secondary)
+<kbd>Ctrl+v</kbd>	Paste selected text (from secondary)
 
 ### Spelling
 
-`Zl`		Correct misspelled word under cursor 
-`ZN`		Go to next misspelled word
-`ZP`		Go to last misspelled word
+<kbd>Zl</kbd>		Correct misspelled word under cursor 
+<kbd>ZN</kbd>		Go to next misspelled word
+<kbd>ZP</kbd>		Go to last misspelled word
 
 More at [spelunker](https://github.com/kamykn/spelunker.vim/blob/master/README.md)
+
+## Markdown helpers
+<kbd>Ctrl+t</kbd>	Insert a bullet point
+<kbd>Ctrl+b</kbd>	Insert bolding (\*\*)
 
 ## Credits
 
