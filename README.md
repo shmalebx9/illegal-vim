@@ -1,5 +1,7 @@
 # Illegal vim
 
+![ivim](https://github.com/shmalebx9/illegal-vim/raw/assets/ivim.png)
+
 ## Requirements
 
 + Nerd Fonts. I'm using [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
@@ -58,6 +60,7 @@ More at [spelunker](https://github.com/kamykn/spelunker.vim/blob/master/README.m
 
 ## Markdown helpers
 <kbd>Ctrl+t</kbd>	Insert a bullet point
+
 <kbd>Ctrl+b</kbd>	Insert bolding (\*\*)
 
 ## Credits
