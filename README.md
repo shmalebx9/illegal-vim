@@ -28,24 +28,30 @@
 
 ## Usage
 
-Initiate with <kbd>svim</kbd> script rather than gvim directly to save the session. This will also open new files in the same vim instance if files are provided as an argument.
+Initiate with `svim` script rather than gvim directly. The svim script will open gvim in server mode if no files are given. If files are supplied then they will be opened in the running instance of gvim. If gvim is not running and files are supplied then they will be opened with gvim in server mode. This is similar to the behaviour of sublime text.
 
 ### Tab Navigation
 
 <kbd>PageUp</kbd>	Go to next 
+
 <kbd>PageDown</kbd>	Go to last 
+
 <kbd>Ctrl+w</kbd>	Close current 
 
 ### "normal" keybinds
 
 <kbd>Ctrl+s</kbd>	Save the current buffer
+
 <kbd>Ctrl+c</kbd>	Copy selected text (to secondary)
+
 <kbd>Ctrl+v</kbd>	Paste selected text (from secondary)
 
 ### Spelling
 
 <kbd>Zl</kbd>		Correct misspelled word under cursor 
+
 <kbd>ZN</kbd>		Go to next misspelled word
+
 <kbd>ZP</kbd>		Go to last misspelled word
 
 More at [spelunker](https://github.com/kamykn/spelunker.vim/blob/master/README.md)
