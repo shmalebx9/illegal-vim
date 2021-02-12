@@ -4,12 +4,13 @@ SVIM="ON"
 if [ ! $(pgrep nvim) ]
      then 
 	     if [ -z "$@" ] ; then
-			alacritty -e nvim -u ~/.config/nvim/restore.vim
+			alacritty --title "svim" -e nvim -u ~/.config/nvim/restore.vim
 		else
-	     		alacritty -e nvr "$@"
+	     		alacritty --title "svim" -e nvr "$@"
 	    		echo "no serverlist"
 		fi
      else
 	     nvr --remote "$@"
+	     wmctrl -a svim
 	     echo "server is running"
 fi
