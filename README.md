@@ -4,21 +4,22 @@
 
 ## Requirements
 
-+ Nerd Fonts. I'm using [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode)
++ Nerd Fonts. I'm using [Iosevka](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Iosevka)
 + nnn-nerd. Get it as a static binary from the [releases](https://github.com/jarun/nnn/releases)
 + Vim-Plug. Follow their [instructions](https://github.com/junegunn/vim-plug)
-+ gvim. Get it from your distro's repo.
++ neovim. Get it from your distro's repo.
++ [Alacritty terminal](https://github.com/alacritty/alacritty). Get it from your distro's repo.
++ Python3 and pyvim. Get pip3 from your distro's repo.
++ wmctrl. Get it from your distro's repo.
 
 ## Installation
 
 + Clone the repo & enter directory
 + Copy gtk theme to match ayu theme.
 
-`cp -r materia-ayu-m ~./local/share/themes/`
++ Copy configs to .config/nvim/
 
-+ Copy vimrc to .vimrc
-
-`cp .vimrc ~/.vimrc`
+`cp *.vim ~/.config/nvim/`
 
 + Copy svim to somewhere in your $ PATH
 
@@ -30,15 +31,15 @@
 
 ## Usage
 
-Initiate with `svim` script rather than gvim directly. The svim script will open gvim in server mode if no files are given. If files are supplied then they will be opened in the running instance of gvim. If gvim is not running and files are supplied then they will be opened with gvim in server mode. This is similar to the behaviour of sublime text.
+Initiate with `svim` script rather than nvim directly. The svim script will open nvim in server mode if no files are given. If files are supplied then they will be opened in the running instance of nvim. If nvim is not running and files are supplied then they will be opened with nvim in server mode. This is similar to the behaviour of sublime text.
 
 ### Tab Navigation
 
 <kbd>PageUp</kbd>	Go to next 
 
-<kbd>PageDown</kbd>	Go to last 
+<kbd>PageDown</kbd>	Go to previous 
 
-<kbd>Ctrl+w</kbd>	Close current 
+<kbd>Ctrl+w</kbd>	Close current buffer 
 
 ### "normal" keybinds
 
@@ -50,7 +51,7 @@ Initiate with `svim` script rather than gvim directly. The svim script will open
 
 ### Spelling
 
-<kbd>Zl</kbd>		Correct misspelled word under cursor 
+<kbd>Ctrl+u</kbd>		Correct misspelled word under cursor 
 
 <kbd>ZN</kbd>		Go to next misspelled word
 
